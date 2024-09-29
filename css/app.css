@@ -1,0 +1,145 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background: #b8c1ec;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  outline: none;
+  color: #232946;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 12px 20px;
+  background: white;
+  margin-bottom: 20px;
+  transform: translateX(-50%);
+  border: 2px solid #232946;
+  box-shadow: rgba(52, 87, 220, 0.2) 0px 15px 25px;
+  transition: tranform 0.3s ease;
+}
+.button:hover {
+  background: #232946;
+  color: white;
+}
+
+body {
+  font-family: "Poppins", system-ui;
+}
+
+.color-heading {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.color-list {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.color-item {
+  list-style: none;
+  text-align: center;
+  margin: 13px;
+  padding: 7px;
+  background-color: #232946;
+  box-shadow: 0 10px 20px rgba(52, 87, 220, 0.08);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.color-item:active {
+  transform: scale(0.95);
+}
+.color-box {
+  width: 160px;
+  height: 160px;
+  background: aquamarine;
+  border-radius: 7px;
+}
+.color-box:hover {
+  filter: brightness(106%);
+}
+.color-code {
+  color: #fffffe;
+  display: block;
+  margin: 12px 0 8px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 510px) {
+  .color-list {
+    margin: 10px;
+  }
+  .color-item {
+    margin: 8px;
+    padding: 5px;
+  }
+  .color-box {
+    width: 130px;
+    height: 130px;
+  }
+  .color-code {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

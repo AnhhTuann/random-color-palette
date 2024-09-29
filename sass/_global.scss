@@ -1,0 +1,40 @@
+body {
+  background: $secondary-color;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  outline: none;
+  color: $primary-color;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 12px 20px;
+  background: white;
+  margin-bottom: 20px;
+  transform: translateX(-50%);
+  border: 2px solid $primary-color;
+  box-shadow: rgba(52, 87, 220, 0.2) 0px 15px 25px;
+  transition: tranform 0.3s ease;
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
